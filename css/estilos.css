@@ -189,3 +189,59 @@ footer{
     width: 1.8rem;
 }
 /* -------------------------Footer - Fin------------------------------------ */
+
+/* --------------------------Estilos - Contactanos - Inicio---------------------------- */
+
+.contenedorGrilla{
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 350px 800px;
+    background-image: url(imagenes/multiplesHambuguesas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tituloContactanos{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color0);
+    font-size: 2rem;
+    text-shadow: black 5px 0px 0px;
+    margin-top: 1rem;
+
+}
+.tituloContactanos h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #7a7a7a;
+    padding-left: 3rem; */
+}
+#form{
+    grid-column: 2/3;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgba(0, 0, 0,0.5);
+
+}
+.componenteForm{
+    margin-top: 3rem;
+    color:white;
+    padding-left: 3rem ;
+    padding-right: 3rem;
+}
+.subForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+
+
+/* --------------------------Estilos - Contactanos - Fin---------------------------- */

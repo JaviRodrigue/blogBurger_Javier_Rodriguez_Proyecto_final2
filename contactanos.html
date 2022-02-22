@@ -51,16 +51,48 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#acercaDeNosotros">Acerca de</a>
-                    </li>
+                    </li>   
                 </ul>
             </div>
         </nav>
         <!-- Barra de navegacion - Fin -->
     </header>
     <!-- -----------------------------Header - Fin---------------------------------- -->
-    <main class="contendorGrilla">
-        <form action="">
+    <main class="contenedorGrilla">
+        <div class="tituloContactanos">
+            <h1>Locos Por Las Hamburguesas</h1>
+            <p class="subForm">Completa el formulario para ser parte de la comunidad</p>
+        </div>
+        <form action="/action_page.php" id="form">
 
+            <div class="componenteForm">
+              <label for="nombreYapellido" class="form-label">Nombre y Apellido</label>
+              <input type="text" class="form-control" placeholder="Nombre y apllido" name="nombreYapellido">
+            </div>
+
+            <div class="componenteForm">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            </div>
+
+            <div class="componenteForm">
+              <label for="nombreCiudad" class="form-label">Nombre de la ciudad</label>
+              <input type="text" class="form-control"  placeholder="nombre de ciudad" name="pswd">
+            </div>
+
+            <div class="componenteForm">
+              <label for="nombrePais" class="form-label">Nombre del Pais</label>
+              <input type="text" class="form-control"  placeholder="Nombre del pais" name="nombrePais">
+            </div>
+
+            <div class="componenteForm">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> acepto terminos y condiciones
+              </label>
+            </div>
+            <div class="componenteForm">
+                <button type="" class="btn btn-primary" id="botonForm">Enviar Informacion</button>
+            </div>
         </form>
     </main>
 
