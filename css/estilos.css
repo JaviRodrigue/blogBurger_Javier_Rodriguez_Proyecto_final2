@@ -243,5 +243,120 @@ footer{
 }
 
 
-
 /* --------------------------Estilos - Contactanos - Fin---------------------------- */
+
+
+
+/* --------------------------Estilos - Contenido - Inicio---------------------------- */
+.tituloMain{
+    background-image: url(https://media.istockphoto.com/photos/delicious-meal-picture-id1295387240?b=1&k=20&m=1295387240&s=170667a&w=0&h=KtWYFjSBgpNgVkE3P-WKZ2F6V-VxyUBBtJIP_k8IANM=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:var(--color0);
+}
+.tituloMain h1{
+    font-size: 3.5rem;
+    text-shadow: black 5px 0px 0px;
+}
+.tituloMain p{
+    font-size: 3rem;
+    text-shadow: black 4px 0px 0px;
+}
+.tituloReseña{
+    background-color: var(--color1);
+    color: var(--color0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenido{
+    background-image: url(imagenes/multiplesHambuguesas.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.grillaContenido{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.uno{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.dos{
+    grid-column: 2/3;
+    grid-row:1/2;
+    flex-wrap: wrap;
+}
+.tres{
+    grid-column: 3/4;
+    grid-row:1/2;
+    flex-wrap: wrap;
+}
+.cuatro{
+    grid-column: 1/2;
+    grid-row:2/3;
+}
+.cinco{
+    grid-column: 2/3;
+    grid-row:2/3;
+}
+
+/* --------------------------Estilos - Contenido - Fin---------------------------- */
+
+/* ---------------------------------------------------------------------------------- */
+/* ----------------------------Media - 961px-------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+@media(min-width:620px) and (max-width:960px){
+    .grillaContenido{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .uno{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .dos{
+        grid-column: 2/3;
+        grid-row:1/2;
+        flex-wrap: wrap;
+    }
+    .tres{
+        grid-column: 1/2;
+        grid-row:2/3;
+        flex-wrap: wrap;
+    }
+    .cuatro{
+        grid-column: 2/3;
+        grid-row:2/3;
+    }
+    .cinco{
+        grid-column: 1/2;
+        grid-row:3/4;
+    }
+
+
+
+
+
+}   
