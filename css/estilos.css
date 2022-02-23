@@ -2,6 +2,10 @@
     margin:0;
     padding:0;
 }
+*::selection{
+    background-color: var(--color1);
+    color:var(--color0);
+}
 /* ---------Declaracion de las variables - Inicio ------------*/
 :root{
     --color0:rgb(226, 106, 8);
@@ -14,6 +18,10 @@
 .navBarImg img{
     width: 5rem;
     padding-left:1.5rem;
+    transition: 1s;
+}
+.navBarImg img:hover{
+    transform: scale(1.1);
 }
 .navBarTitulo{
     color: var(--color0);
@@ -62,7 +70,7 @@
 }
 .jumboP{
     color:var(--color0);
-    text-shadow: black 5px 0px 0px;
+    text-shadow: black 3px 0px 0px;
     font-size: 2.5rem;
     margin-left: 4rem;
     padding-left: 2rem;
@@ -188,6 +196,8 @@ footer{
 .box__footer img{
     width: 1.8rem;
 }
+
+
 /* -------------------------Footer - Fin------------------------------------ */
 
 /* --------------------------Estilos - Contactanos - Inicio---------------------------- */
@@ -219,8 +229,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: #7a7a7a;
-    padding-left: 3rem; */
 }
 #form{
     grid-column: 2/3;
@@ -288,6 +296,7 @@ footer{
     grid-template-rows: 1fr 1fr;
 }
 
+
 .uno{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -295,33 +304,74 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    margin: 2rem 3rem 3rem 2rem;
+    width: 300px;
 }
 .dos{
     grid-column: 2/3;
     grid-row:1/2;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 3rem 3rem 2rem;
+    width: 300px;
 }
 .tres{
     grid-column: 3/4;
     grid-row:1/2;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 3rem 3rem 2rem;
+    width: 300px;
 }
 .cuatro{
     grid-column: 1/2;
     grid-row:2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 3rem 3rem 2rem;
+    width: 300px;
 }
 .cinco{
     grid-column: 2/3;
     grid-row:2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 3rem 3rem 2rem;
+    width: 300px;
+}
+.seis{
+    grid-column: 3/4;
+    grid-row:2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 3rem 3rem 2rem;
+    width: 300px;
+}
+
+.imagen{
+    transition: 1s;
+}
+.imagen:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 /* --------------------------Estilos - Contenido - Fin---------------------------- */
 
-/* ---------------------------------------------------------------------------------- */
-/* ----------------------------Media - 961px-------------------------------------- */
-/* ---------------------------------------------------------------------------------- */
-@media(min-width:620px) and (max-width:960px){
+/* ------------------------------------------------------------------------------------ */
+/* -----------------------------Meadia - 1110px------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+@media(max-width:1110px) and (min-width:738px){
     .grillaContenido{
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -330,33 +380,112 @@ footer{
     .uno{
         grid-column: 1/2;
         grid-row: 1/2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        
     }
     .dos{
         grid-column: 2/3;
         grid-row:1/2;
-        flex-wrap: wrap;
+        
     }
     .tres{
         grid-column: 1/2;
         grid-row:2/3;
-        flex-wrap: wrap;
+       
     }
     .cuatro{
         grid-column: 2/3;
         grid-row:2/3;
+        
     }
     .cinco{
         grid-column: 1/2;
         grid-row:3/4;
+     
     }
+    .seis{
+        grid-column:2/3;
+        grid-row:3/4;
+    }
+   
+}
+/* ------------------------------------------------------------------------------------ */
+/* -----------------------------Meadia - 736px------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+@media(max-width:738px) and (min-width:431px){
+    .grillaContenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tituloMain h1{
+        margin-left: 6rem;
+        margin-right:5rem;
+        padding-left: 2rem;
 
-
-
-
-
-}   
+    }
+    .jumboTitulo{
+        font-size: 1.9rem;
+    }
+    .jumboP{
+        font-size: 1.7rem;
+    }
+    .boton .btn{
+        font-size: 1.3rem;
+    }
+    .contenedorGrilla{
+        display:grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 350px 800px;
+    }
+    .tituloContactanos h1{
+        font-size: 1.6rem;
+    }
+    .subForm{
+        font-size: 1.5rem;
+    }
+}
+/* ------------------------------------------------------------------------------------ */
+/* -----------------------------Meadia - 425px------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+@media(max-width:431px){
+    .grillaContenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tituloMain h1{
+        font-size: 2rem;
+        margin-left:5rem;
+        margin-right:4rem;
+    }
+    .tituloMain p{
+        font-size: 2rem;
+    }
+    .jumboTitulo{
+        font-size: 1.5rem;
+    }
+    .jumboP{
+        font-size: 1.5rem;
+    }
+    .boton .btn{
+        font-size: 1.3rem;
+    }
+    .contenedorGrilla{
+        display:grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 350px 800px;
+    }
+    .tituloContactanos h1{
+        font-size: 1.6rem;
+        margin-left:5rem;
+        margin-right: 4rem;
+    }
+    .subForm{
+        font-size: 1.5rem;
+    }
+    .navBarTitulo p{
+        font-size: 1.5rem;
+    }
+}
